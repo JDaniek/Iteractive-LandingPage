@@ -16,3 +16,20 @@ body {
 p {
     font-weight: 18px;
 }
+
+.nav {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__hamburguer {
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/icons/icon-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
