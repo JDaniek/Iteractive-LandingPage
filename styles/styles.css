@@ -38,10 +38,35 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    z-index: 1000;
+}
+
+.nav__hamburguer--open{
+    background-image: url('../assets/icons/icon-close-menu.svg');
 }
 
 .nav__screen{
     background-color: rgba(0, 0, 0, 0.579);
     position: fixed;
     inset: 0;
+}
+
+.nav__menu{
+    position: absolute;
+    width: 60%;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 70px 0;
+    max-width: 400px;
+    list-style: none;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__buttons{
+    display: flex;
+    flex-direction: column;
 }
