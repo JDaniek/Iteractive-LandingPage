@@ -17,12 +17,12 @@ p {
     font-weight: 18px;
 }
 
-.nav {
+/* .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
 .nav__hamburguer {
     width: 40px;
