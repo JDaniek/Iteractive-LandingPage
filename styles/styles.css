@@ -17,12 +17,19 @@ p {
     font-weight: 18px;
 }
 
-/* .nav {
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+.nav {
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-} */
+}
 
 .nav__hamburguer {
     width: 40px;
@@ -31,4 +38,10 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+}
+
+.nav__screen{
+    background-color: rgba(0, 0, 0, 0.579);
+    position: fixed;
+    inset: 0;
 }
