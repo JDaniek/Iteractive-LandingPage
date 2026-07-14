@@ -68,6 +68,21 @@ p {
     flex-direction: column;
 }
 
+.nav__item{
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.nav__parent{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 1.3rem;
+    padding: 20px 0;
+}
+
 .nav__buttons {
     display: flex;
     flex-direction: column;
