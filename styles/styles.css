@@ -17,12 +17,13 @@ p {
     font-weight: 18px;
 }
 
-.container{
+.container {
     width: 90%;
     margin: auto;
     overflow: hidden;
     max-width: 1200px;
 }
+
 .nav {
     height: 70px;
     display: flex;
@@ -39,19 +40,20 @@ p {
     background-position: center;
     cursor: pointer;
     z-index: 1000;
+    transition: background-image .3s
 }
 
-.nav__hamburguer--open{
+.nav__hamburguer--open {
     background-image: url('../assets/icons/icon-close-menu.svg');
 }
 
-.nav__screen{
+.nav__screen {
     background-color: rgba(0, 0, 0, 0.579);
     position: fixed;
     inset: 0;
 }
 
-.nav__menu{
+.nav__menu {
     position: absolute;
     width: 60%;
     background-color: #fff;
@@ -66,7 +68,7 @@ p {
     flex-direction: column;
 }
 
-.nav__buttons{
+.nav__buttons {
     display: flex;
     flex-direction: column;
 }
