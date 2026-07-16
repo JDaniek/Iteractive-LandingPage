@@ -7,7 +7,6 @@ menuIcon.addEventListener("click", () => {
 });
 
 navOverlay.addEventListener("click", (e) => {
-  e.preventDefault();
   const currentElement = e.target;
   if (isActive(currentElement, "nav__parent")) {
     const subMenu = currentElement.parentElement.children[1];
