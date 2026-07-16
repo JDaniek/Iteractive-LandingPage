@@ -75,15 +75,36 @@ p {
     cursor: pointer;
 }
 
+.nav__inner{
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    overflow: hidden;
+    height: 0;
+    transition: heigh .4s;
+}
+
 .nav__parent{
     display: grid;
     align-items: center;
     grid-auto-flow: column;
+    grid-template-columns:max-content;
     gap: 1.3rem;
     padding: 20px 0;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--black);
 }
 
 .nav__buttons {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    text-align: center;
 }
