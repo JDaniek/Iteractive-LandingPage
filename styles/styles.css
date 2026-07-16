@@ -96,7 +96,7 @@ p {
     gap: 1.5rem;
     overflow: hidden;
     height: 0;
-    transition: heigh .4s;
+    transition: height .4s;
 }
 
 .nav__parent {
