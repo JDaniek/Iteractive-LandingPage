@@ -22,7 +22,71 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
 
-  <body></body>
+  <body>
+    <nav class="nav container">
+      <img src="./assets/icons/logo.svg" alt="Snap logo" class="nav__logo" />
+
+      <div class="nav__hamburguer"></div>
+      <div class="nav__screen">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <span class="nav__parent"
+              >Features
+              <img
+                class="nav__arrow"
+                src="./assets/icons/icon-arrow-down.svg"
+                alt="Flecha baja"
+              />
+            </span>
+            <ul class="nav__inner">
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-todo.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-calendar.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-reminders.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-planning.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <span class="nav__parent"
+              >Company
+              <img src="./assets/icons/icon-arrow-down.svg" alt="Flecha baja" />
+            </span>
+            <ul class="nav__inner">
+              <li class="nav__dropdown">
+                <a class="nav__link" href="">History</a>
+              </li>
+              <li class="nav__dropdown">
+                <a class="nav__link" href="">Our Team</a>
+              </li>
+              <li class="nav__dropdown">
+                <a class="nav__link" href=""> Blog </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Carrers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+          
+          <div class="nav__buttons">
+            <a href="#" class="nav__button nav__button--login">Login</a>
+            <a href="#" class="nav__button nav__button--register">Register</a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </body>
   <footer class="attribution">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
