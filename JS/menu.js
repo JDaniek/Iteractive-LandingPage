@@ -5,6 +5,16 @@ const navOverlay = document.querySelector(".nav__screen");
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("nav__hamburguer--open");
   navOverlay.classList.toggle("nav__screen--show");
+  if (!menuIcon.classList.contains("nav__hamburguer--open")) {
+    const navInners = document.querySelectorAll(".nav__inner");
+    const arrowIconsOpen = document.querySelectorAll(".nav__arrow");
+    navInners.forEach((navInner) => {
+      navInner.style.height = "0px";
+    });
+    arrowIconsOpen.forEach((arrowIconOpen) => {
+      arrowIconOpen.style.transform = "rotate(0deg)";
+    });
+  }
 });
 
 // Desplegar sub menus
