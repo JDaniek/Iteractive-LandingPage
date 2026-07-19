@@ -15,7 +15,7 @@ navOverlay.addEventListener("click", (e) => {
     if (window.innerWidth < 768) {
       let height = subMenu.clientHeight == 0 ? subMenu.scrollHeight : 0;
       subMenu.style.height = `${height}px`;
-    } else {
+      rotateArrow(currentElement);
     }
   }
 });
@@ -33,4 +33,16 @@ window.addEventListener("resize", () => {
 
 function isActive(element, string) {
   return element.classList.value.includes(string);
+}
+
+function rotateArrow(currentElement) {
+  let currentItem = currentElement.parentElement;
+  const navInner = currentElement.parentElement.children[1];
+  const arrowIcon = currentElement.querySelector(".nav__arrow");
+  console.log(arrowIcon);
+  if (navInner.style.height != "0px") {
+    arrowIcon.style.transform = "rotate(180deg)";
+  } else {
+    arrowIcon.style.transform = "rotate(0deg)";
+  }
 }
