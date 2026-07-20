@@ -1,3 +1,36 @@
-.nav__hamburguer{
+.nav {
+    gap: 2rem;
+    overflow: visible;
+}
+
+.nav__hamburguer {
     display: none;
+}
+
+.nav__screen {
+    pointer-events: unset;
+    position: unset;
+    background-color: transparent;
+    opacity: 1;
+    flex: 1;
+}
+
+.nav__menu {
+    position: unset;
+    width: 100%;
+    max-width: unset;
+    background-color: unset;
+    padding: 0;
+    overflow: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav__buttons{
+    display: inherit;
+    flex-direction: row;
+    width: max-content;
+    margin: unset;
 }
