@@ -3,6 +3,10 @@
     overflow: visible;
 }
 
+.container {
+    max-width: unset;
+}
+
 .nav__hamburguer {
     display: none;
 }
@@ -25,7 +29,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1em;
+    gap: 2rem;
 }
 
 .nav__buttons {
@@ -38,9 +42,11 @@
 .nav__button {
     padding: 0.7em 1.5em;
 }
-.main{
+
+.main {
     padding: 0 75px;
 }
+
 .hero {
     margin-top: 30px;
     grid-auto-flow: column;
@@ -51,13 +57,14 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.hero__img{
+.hero__img {
     height: 100%;
 }
 
-.hero__article{
+.hero__article {
     padding: 70px 20px;
 }
-.hero__texts{
+
+.hero__texts {
     text-align: left;
 }
