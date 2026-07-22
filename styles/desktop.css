@@ -32,6 +32,24 @@
     gap: 1rem;
 }
 
+.nav__inner {
+    position: absolute;
+    height: auto;
+    background-color: var(--white);
+    width: max-content;
+    padding: 2em;
+    z-index: 100;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__inner--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
 .nav__buttons {
     display: inherit;
     flex-direction: row;

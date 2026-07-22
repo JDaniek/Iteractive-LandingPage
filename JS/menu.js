@@ -27,6 +27,8 @@ navOverlay.addEventListener("click", (e) => {
       subMenu.style.height = `${height}px`;
       rotateArrow(currentElement);
     }
+  }else{
+    
   }
 });
 
