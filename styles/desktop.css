@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav__buttons {
@@ -67,7 +67,7 @@
 }
 
 .hero__article {
-    padding: 75px 50px;
+    padding: 75px 0;
 }
 
 .hero__texts {
@@ -83,7 +83,7 @@
 .hero__paragraph {
     margin: 5rem 0;
     font-size: 1.2rem;
-    padding: 0;
+    direction: ltr;
 }
 
 .hero__link {
@@ -93,8 +93,4 @@
 .hero__brands {
     margin: unset;
     margin-top: 70px;
-}
-
-.hero__brands{
-
 }
