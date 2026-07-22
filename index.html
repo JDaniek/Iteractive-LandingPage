@@ -1,39 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="(min-width:768px)"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
 
-  Features
-  Company
-  Careers
-  About
+  <body>
+    <nav class="nav container">
+      <img src="./assets/icons/logo.svg" alt="Snap logo" class="nav__logo" />
 
-  Login
-  Register
+      <div class="nav__hamburguer"></div>
+      <div class="nav__screen">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <span class="nav__parent"
+              >Features
+              <img
+                class="nav__arrow"
+                src="./assets/icons/icon-arrow-down.svg"
+                alt="Flecha baja"
+              />
+            </span>
+            <ul class="nav__inner">
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-todo.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-calendar.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-reminders.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
 
-  Make remote work
+              <li class="nav__dropdown">
+                <img src="./assets/icons/icon-planning.svg" alt="" />
+                <a class="nav__link" href="#">Todo List</a>
+              </li>
+            </ul>
+          </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+          <li class="nav__item">
+            <span class="nav__parent"
+              >Company
+              <img
+                class="nav__arrow"
+                src="./assets/icons/icon-arrow-down.svg"
+                alt="Flecha baja"
+              />
+            </span>
+            <ul class="nav__inner">
+              <li class="nav__dropdown">
+                <a class="nav__link" href="">History</a>
+              </li>
+              <li class="nav__dropdown">
+                <a class="nav__link" href="">Our Team</a>
+              </li>
+              <li class="nav__dropdown">
+                <a class="nav__link" href=""> Blog </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Carrers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
 
-  Learn more
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+          <div class="nav__buttons">
+            <a href="#" class="nav__button nav__button--login">Login</a>
+            <a href="#" class="nav__button nav__button--register">Register</a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="hero">
+        <picture class="hero__pictures">
+          <source
+            srcset="./assets/images/image-hero-desktop.png"
+            class="hero__img"
+            media="(min-width:768px)"
+          />
+
+          <img
+            src="./assets/images/image-hero-mobile.png"
+            alt=""
+            class="hero__img"
+          />
+        </picture>
+
+        <article class="hero__article">
+          <div class="hero__texts">
+            <h1 class="hero__title">Make remote work</h1>
+            <p class="hero__paragraph">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+
+            <a href="#" class="hero__link">Learn more</a>
+          </div>
+
+          <div class="hero__brands">
+            <img
+              src="./assets/icons/client-maker.svg"
+              alt=""
+              class="hero__brand"
+            />
+            <img
+              src="./assets/icons/client-audiophile.svg"
+              alt=""
+              class="hero__brand"
+            />
+            <img
+              src="./assets/icons/client-meet.svg"
+              alt=""
+              class="hero__brand"
+            />
+            <img
+              src="./assets/icons/client-databiz.svg"
+              alt=""
+              class="hero__brand"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./JS/menu.js"></script>
+  </body>
 </html>

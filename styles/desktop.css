@@ -1,0 +1,114 @@
+.nav {
+    gap: 2rem;
+    overflow: visible;
+}
+
+.container {
+    max-width: unset;
+}
+
+.nav__hamburguer {
+    display: none;
+}
+
+.nav__screen {
+    pointer-events: unset;
+    position: unset;
+    background-color: transparent;
+    opacity: 1;
+    flex: 1;
+}
+
+.nav__menu {
+    position: unset;
+    width: 100%;
+    max-width: unset;
+    background-color: unset;
+    padding: 0;
+    overflow: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__inner {
+    position: absolute;
+    height: auto;
+    background-color: var(--white);
+    width: max-content;
+    padding: 2em;
+    z-index: 100;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__inner--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.nav__buttons {
+    display: inherit;
+    flex-direction: row;
+    width: max-content;
+    margin: unset;
+}
+
+.nav__button {
+    padding: 0.7em 1.5em;
+}
+
+.main {
+    padding: 0 75px;
+}
+
+.hero {
+    margin-top: 30px;
+    grid-auto-flow: column;
+    direction: rtl;
+    align-items: center;
+    padding: unset;
+    object-position: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero__pictures {
+    max-width: 500px;
+    padding: 0 10px;
+}
+
+.hero__img {
+    height: 100%;
+}
+
+.hero__article {
+    padding: 75px 0;
+}
+
+.hero__texts {
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__paragraph {
+    margin: 5rem 0;
+    font-size: 1.2rem;
+    direction: ltr;
+}
+
+.hero__link {
+    padding: 1rem 1.8rem;
+}
+
+.hero__brands {
+    margin: unset;
+    margin-top: 70px;
+}
