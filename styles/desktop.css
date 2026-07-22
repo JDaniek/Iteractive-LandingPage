@@ -57,14 +57,44 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.hero__pictures {
+    max-width: 500px;
+    padding: 0 10px;
+}
+
 .hero__img {
     height: 100%;
 }
 
 .hero__article {
-    padding: 70px 20px;
+    padding: 75px 50px;
 }
 
 .hero__texts {
     text-align: left;
+    margin: 0 auto;
+
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__paragraph {
+    margin: 5rem 0;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.hero__link {
+    padding: 1rem 1.8rem;
+}
+
+.hero__brands {
+    margin: unset;
+    margin-top: 70px;
+}
+
+.hero__brands{
+
 }
