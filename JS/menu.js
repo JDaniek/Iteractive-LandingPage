@@ -26,9 +26,10 @@ navOverlay.addEventListener("click", (e) => {
       let height = subMenu.clientHeight == 0 ? subMenu.scrollHeight : 0;
       subMenu.style.height = `${height}px`;
       rotateArrow(currentElement);
+    } else {
+      subMenu.classList.toggle('nav__inner--show')
+      rotateArrow(currentElement);
     }
-  }else{
-    
   }
 });
 
@@ -55,7 +56,7 @@ function rotateArrow(currentElement) {
   let currentItem = currentElement;
   const navInner = currentItem.parentElement.children[1];
   const arrowIcon = currentItem.querySelector(".nav__arrow");
-  if (navInner.style.height != "0px") {
+  if (navInner.style.height > "0px" || navInner.classList.contains('nav__inner--show')) {
     arrowIcon.style.transform = "rotate(180deg)";
   } else {
     arrowIcon.style.transform = "rotate(0deg)";
